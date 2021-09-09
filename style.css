@@ -1,0 +1,75 @@
+* { /* Selector global con texto alineado al centro*/
+    text-align: center;
+}
+
+body {  /* Cuerpo de la página con un degradado lineal de tonos azules*/
+    background: linear-gradient(180deg, #1490ca 10%, #126080 35%, #062bbe 100%);
+
+}
+
+.contenedor {   /* Contenedor con forma cuadrada donde va todo el formulario con una sombra en el borde, un margen y un radio para su forma*/
+    background: linear-gradient(180deg, #01afff 10%, #027699 35%, #0033ff 100%);
+    margin: 10% 25%;
+    padding: 5%;
+    box-shadow: 1rem .3rem 1rem #040016;
+    border-radius: 1rem;
+}
+
+label { /* Etiqueta de elemento, dónde solo va la palabra "departamento" de color negro y de fuente de distinto tamaño*/
+    color: rgb(0, 0, 0);
+    font-size: 2.2rem;
+} 
+
+select { /* Control de selector para distintas opciones del formulario con estilos de colores, bordes, alturas y tamaño de fuentes*/
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 1.9rem;
+    width: 30%;
+    border-radius: 10rem;
+    padding: 1.5% 1%;
+    border-color: #062bbe;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+input { /* Control de datos del formulario de distintos tipos, con estilos de bordes, colores, tamaño de fuentes y alturas*/
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 1.9rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.4% .1%;
+    border-color: black;
+    margin-bottom: 2%;
+}
+
+input:focus {   /* Cuando se enfoca en una parte del formulario donde se ingresan datos cambia el color del fondo a un azul claro */
+    background-color: #85e5fd;
+}
+
+button { /* Estilos de los botones con degradado, distinto cursor, tamaño de la caja y tiempo de transición*/
+    background: linear-gradient(10deg, #135fee 50%, #1c6afb 50%);
+    color: black;
+    font-size: 1.8rem;
+    width: 45%;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin: 1% 1%;
+    padding: 2% 1%;
+    border-color: #062bbe;
+    box-sizing: content-box;
+    box-shadow: .2rem .4rem .50rem .1rem #3104fa;
+    transition: 0.5s;
+}
+
+button:hover { /* Cuando se pasa por encima del botón se agranda a una escala de 1.1 y se pone de color blanco el texto*/
+    transform: scale(1.1);
+    color: white;
+}
+
+button:active { /* Cuando se presiona el botón cambia el fondo a color blanco y el texto a color azul*/
+    background-color: white;
+    color: #01afff;
+}
+
+
