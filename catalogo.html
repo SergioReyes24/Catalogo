@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="contenedor">
+
+            <form action="">
+                <label for="Departamento">Departamento:</label>
+                <select name="Departamento" id="departamento" required>
+                    <option value="Computacion">Computacion</option>
+                    <option value="Herramientas">Herramientas</option>
+                    <option value="Cables">Cables</option>
+                    <option value="Telefonia">Telefonia</option>
+                    <option value="Electronicos">Electronicos</option>
+                </select>
+                <br> <br>
+                <input type="text" name="Producto" id="productos" placeholder="Producto">
+                <br> <br>
+                <input type="number" name="Precio" id="precios" placeholder="Precio del producto">
+                <br> <br>
+                <input type="number" name="Existencia" id="existencia" placeholder="Articulos en stock">
+                <br> <br>
+                <button type="button" id="enviar" onclick="Datos()">Enviar</button>
+
+                <button onclick="location.reload()">Refrescar pagina</button>
+                <!-- 
+                    ¿Qué paso con los productos que ya habían sido añadidos al utilizar el botón "Refrescar página"?
+
+                    Cuando se presiona el botón de refrescar página los productos antes añadidos se borran del arreglo. Esto probablemente suceda
+                    porque aunque se agregan a un arreglo, al recargar la página estos se "reincian" y como no son parte del arreglo original es como
+                    si nunca hubieran existido. Creo que esto se arreglaría utilizando una base de datos para guardar todos los datos que nos de el usuario.
+                -->
+                <br>
+                <br>
+                <button type="button" id="registro">Registro</button>
+            </form>
+        </div>
+        <script src="./java.js"></script>
+
+    </body>
+</html>
